@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain Jekyll Template"
+  short_description: "Operate a multilingual GitHub Pages template"
+  default_prompt: "Use $maintain-jekyll-multilang-template to update and validate this multilingual Jekyll starter safely."
