@@ -1,8 +1,10 @@
-title: 'Soporte DSpace'
-title_en: 'DSpace Support'
-title_pt: 'Suporte DSpace'
+title: 'LA Referencia - Soporte técnico DSpace'
+title_en: 'LA Referencia - Technical support DSpace'
+title_pt: 'LA Referencia - Suporte técnico DSpace'
 
 description: 'Portal de soporte técnico DSpace · Programa LA Referencia – Lyrasis'
+description_en: 'Technical support portal DSpace · LA Referencia – Lyrasis Program'
+description_pt: 'Portal de suporte técnico DSpace · Programa LA Referencia – Lyrasis'
 
 baseurl: ''
 url: 'https://example.com'
