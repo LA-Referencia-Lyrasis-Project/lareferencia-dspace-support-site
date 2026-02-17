@@ -1,13 +1,35 @@
-# jekyll-multilang-template
+# Portal de Soporte Técnico DSpace
 
-Plantilla neutra de Jekyll para GitHub Pages, con estructura multilenguaje (`en`, `es`, `pt`).
+Sitio estático en Jekyll para el programa **LA Referencia - Lyrasis**, con soporte multilenguaje (`es`, `en`, `pt`).
+
+## Estado actual
+
+- Idioma de entrada del sitio: **español** (`/` redirige a `/es/home`).
+- Home y diseño principal alineados en los 3 idiomas.
+- Cuatro secciones de soporte publicadas por idioma:
+  - conocer
+  - migrar
+  - instalar
+  - soporte técnico
+- Página `ticket` disponible en los 3 idiomas, actualmente **despublicada** (`published: false`).
+- Footer actualizado para usar datos del sitio y licencia **Creative Commons CC BY-NC 4.0**.
+
+## Estructura principal
+
+- Configuración: `_config.yml`, `_config_github.yml`
+- Layouts: `_layouts/`
+- Includes: `_includes/`
+- Páginas: `_pages/{es,en,pt}/`
+- Posts: `_posts/{es,en,pt}/`
+- Estilos: `assets/main.scss`
+- Contexto funcional: `context/intro.md`
 
 ## Requisitos
 
 - Ruby `3.3.x` (el proyecto fija `3.3.10` en `.ruby-version`)
 - Bundler `2.3.26`
 
-## Ejecutar localmente (instalando Ruby en macOS)
+## Ejecutar localmente (Ruby en macOS)
 
 ```bash
 brew install ruby@3.3
@@ -22,9 +44,7 @@ bundle _2.3.26_ exec jekyll serve --livereload --config _config.yml,_config_gith
 
 Abrir en: `http://127.0.0.1:4000`
 
-## Ejecutar con Docker (recomendado)
-
-Sin instalar Ruby local:
+## Ejecutar con Docker
 
 ```bash
 cd /Users/lmatas/source/github-pages-site-template
@@ -41,17 +61,7 @@ bundle _2.3.26_ exec jekyll build --config _config.yml,_config_github.yml
 
 ## Personalización rápida
 
-1. Edita identidad del sitio en `_config.yml` y `_config_github.yml`.
-2. Reemplaza contenido en `_pages` y `_posts`.
-3. Ajusta la paleta en `_data/theme.yml` (archivo centralizado de colores).
-4. Ajusta estilos en `assets/main.scss`.
-5. (Opcional) agrega tu `CNAME` si usarás dominio personalizado.
-
-## Paleta de colores
-
-La paleta se configura en:
-
-- `_data/theme.yml`
-
-El archivo define colores base (primario, secundarios, bordes, fondos, gradientes y tonos suaves).  
-`assets/main.scss` consume esos valores y los expone como variables CSS (`:root`), por lo que puedes cambiar el look completo editando solo ese archivo de datos.
+1. Edita identidad, URL y contacto en `_config.yml` y `_config_github.yml`.
+2. Publica/despublica secciones con `published: true/false` en `_pages` y `_posts`.
+3. Ajusta paleta en `_data/theme.yml`.
+4. Ajusta diseño en `assets/main.scss`.
