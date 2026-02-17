@@ -4,7 +4,7 @@ title: Aliados
 description: Sección de aliados de ejemplo para este template
 language: es
 language_reference: funders
-published: true
+published: false
 order: 2
 ---
 

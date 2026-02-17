@@ -4,7 +4,7 @@ title: Equipo
 description: Conoce al equipo detrás de este sitio
 language: es
 language_reference: team
-published: true
+published: false
 order: 1
 ---
 

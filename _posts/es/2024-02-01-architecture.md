@@ -7,7 +7,7 @@ language: es
 language_reference: template-structure
 home_order: 2
 categories: post
-published: true
+published: false
 ---
 
 Este starter está organizado para facilitar el mantenimiento de contenido multilingüe y navegación.

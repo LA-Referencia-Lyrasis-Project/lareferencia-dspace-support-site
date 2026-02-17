@@ -4,7 +4,7 @@ title: Parceiros
 description: Seção de parceiros de exemplo para este template
 language: pt
 language_reference: funders
-published: true
+published: false
 order: 2
 ---
 

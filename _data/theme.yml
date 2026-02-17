@@ -1,20 +1,20 @@
 palette:
-  primary: "#0ea5e9"
-  primary_strong: "#0284c7"
-  secondary: "#0f172a"
-  accent: "#e0f2fe"
-  text: "#334155"
-  text_light: "#64748b"
-  text_muted: "#94a3b8"
-  border: "#dbeafe"
-  border_muted: "#cbd5e1"
-  background_light: "#f0f9ff"
-  neutral_soft: "#f8fafc"
-  neutral_panel: "#f1f5f9"
-  surface: "#ffffff"
-  gradient_start: "#e0f2fe"
-  gradient_end: "#f0f9ff"
-  primary_soft_bg: "rgba(14, 165, 233, 0.10)"
-  primary_soft_bg_strong: "rgba(14, 165, 233, 0.15)"
-  primary_soft_border: "rgba(14, 165, 233, 0.20)"
-  primary_soft_shadow: "rgba(14, 165, 233, 0.18)"
+  primary: "#1B365D"          # Azul Marino (LA Referencia)
+  primary_strong: "#0060A9"   # Azul Real Vibrante
+  secondary: "#0284C7"       # Azul Cian (del banner)
+  accent: "#F59E0B"          # Ámbar/Naranja cálido (Lyrasis)
+  text: "#1F2937"
+  text_light: "#4B5563"
+  text_muted: "#6B7280"
+  border: "#E2E8F0"
+  border_muted: "#CBD5E1"
+  background_light: "#F0F9FF" # Un toque de azul en el fondo
+  neutral_soft: "#F1F5F9"
+  neutral_panel: "#E5E7EB"
+  surface: "#FFFFFF"
+  gradient_start: "#1B365D"   # Gradiente de Marino...
+  gradient_end: "#0284C7"     # ...a Cian vibrante
+  primary_soft_bg: "rgba(2, 132, 199, 0.08)"
+  primary_soft_bg_strong: "rgba(2, 132, 199, 0.12)"
+  primary_soft_border: "rgba(2, 132, 199, 0.15)"
+  primary_soft_shadow: "rgba(2, 132, 199, 0.12)"

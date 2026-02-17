@@ -2,20 +2,35 @@
 layout: default
 ---
 <div class="home">
-  <section class="hero my-8 text-center">
-    <img src="{{ "/assets/img/logo-dummy.svg" | relative_url }}" alt="Template Logo" class="hero-logo">
-    <h1>
-      {% if page.language == "es" %}
-        {{ site.title | escape }}
-      {% elsif page.language == "pt" %}
-        {{ site.title_pt | escape }}
-      {% else %}
-        {{ site.title_en | escape }}
-      {% endif %}
-    </h1>
-    <p class="lead">
-      {{ site.description }}
-    </p>
+  <section class="hero hero-home my-8 text-center">
+    {% if page.language == "es" %}
+      <p class="hero-chip">Programa regional de soporte DSpace</p>
+      <h1 class="hero-main-title">
+        Portal de Soporte Técnico
+        <span>LA Referencia - Lyrasis</span>
+      </h1>
+      <p class="lead hero-subtitle">
+        Orientación estructurada, documentación práctica y derivación inteligente a soporte.
+      </p>
+    {% elsif page.language == "pt" %}
+      <p class="hero-chip">Programa regional de suporte DSpace</p>
+      <h1 class="hero-main-title">
+        Portal de Suporte Técnico
+        <span>LA Referencia - Lyrasis</span>
+      </h1>
+      <p class="lead hero-subtitle">
+        Orientação estruturada, documentação prática e encaminhamento inteligente para suporte.
+      </p>
+    {% else %}
+      <p class="hero-chip">Regional DSpace support program</p>
+      <h1 class="hero-main-title">
+        Technical Support Portal
+        <span>LA Referencia - Lyrasis</span>
+      </h1>
+      <p class="lead hero-subtitle">
+        Structured guidance, practical documentation, and smart routing to support.
+      </p>
+    {% endif %}
   </section>
 
   <section class="content my-8">

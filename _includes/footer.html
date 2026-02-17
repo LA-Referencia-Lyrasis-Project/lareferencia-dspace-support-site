@@ -1,5 +1,13 @@
 <footer class="site-footer">
   <div class="wrapper">
+    {% assign contact_page = site.pages
+      | where: 'layout', 'page'
+      | where: 'language', page.language
+      | where: 'language_reference', 'contact'
+      | first %}
+    {% assign footer_email = site.email | default: '' | strip %}
+    {% assign footer_github = site.github_username | default: '' | strip %}
+
     <div class="footer-grid">
       <div class="footer-column">
         <div class="footer-branding">
@@ -56,21 +64,21 @@
           {% endif %}
         </h3>
         <ul class="footer-nav">
-          {% if site.email %}
+          {% if footer_email != '' %}
             <li>
-              <a href="mailto:{{ site.email }}" class="footer-link">
+              <a href="mailto:{{ footer_email }}" class="footer-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
-                {{ site.email }}
+                {{ footer_email }}
               </a>
             </li>
           {% endif %}
           
-          {% if site.github_username %}
+          {% if footer_github != '' %}
             <li>
-              <a href="https://github.com/{{ site.github_username }}" target="_blank" class="footer-link">
+              <a href="https://github.com/{{ footer_github }}" target="_blank" class="footer-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -79,27 +87,35 @@
             </li>
           {% endif %}
 
-          <li>
-            <a href="{{ site.baseurl }}/{% if page.language == "es" %}es{% elsif page.language == "pt" %}pt{% else %}en{% endif %}/contact" class="footer-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-              </svg>
-              {% if page.language == "es" %}
-                Contáctenos
-              {% elsif page.language == "pt" %}
-                Fale Conosco
-              {% else %}
-                Contact Us
-              {% endif %}
-            </a>
-          </li>
+          {% if contact_page and contact_page.published != false %}
+            <li>
+              <a href="{{ site.baseurl }}{{ contact_page.url }}" class="footer-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                {% if page.language == "es" %}
+                  Contáctenos
+                {% elsif page.language == "pt" %}
+                  Fale Conosco
+                {% else %}
+                  Contact Us
+                {% endif %}
+              </a>
+            </li>
+          {% endif %}
         </ul>
       </div>
     </div>
     
     <div class="footer-bottom">
       <div class="footer-copyright">
-        &copy; {% assign date_format = site.minima.date_format | default: "%Y" %}{{ 'now' | date: date_format }} Template Site
+        {% if page.language == "es" %}
+          Licencia: <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener" class="footer-link">Creative Commons CC BY-NC 4.0</a>
+        {% elsif page.language == "pt" %}
+          Licença: <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener" class="footer-link">Creative Commons CC BY-NC 4.0</a>
+        {% else %}
+          License: <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener" class="footer-link">Creative Commons CC BY-NC 4.0</a>
+        {% endif %}
       </div>
     </div>
   </div>

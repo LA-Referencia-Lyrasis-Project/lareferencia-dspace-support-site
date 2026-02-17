@@ -4,7 +4,7 @@ title: Team
 description: Meet the people behind this site
 language: en
 language_reference: team
-published: true
+published: false
 order: 1
 ---
 

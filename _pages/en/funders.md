@@ -4,7 +4,7 @@ title: Partners
 description: Example partner section for this template
 language: en
 language_reference: funders
-published: true
+published: false
 order: 2
 ---
 

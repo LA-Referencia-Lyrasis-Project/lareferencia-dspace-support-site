@@ -1,20 +1,20 @@
 # Site settings
 
-title: 'Starter Site Template'
-title_en: 'Starter Site Template'
-title_pt: 'Modelo de Site Base'
+title: 'Soporte DSpace'
+title_en: 'DSpace Support'
+title_pt: 'Suporte DSpace'
 
-description: 'A neutral multilingual Jekyll template for GitHub Pages.'
+description: 'Portal de soporte técnico DSpace · Programa LA Referencia – Lyrasis'
 
 baseurl: ''
 absolute_url: 'https://example.com/'
 url: 'https://example.com'
 
-email: hello@example.com
+email: soporte-dspace@lareferencia.info
 twitter_username: ''
 github_username: ''
 
-default_language: 'en'
+default_language: 'es'
 fallback_page: 'home'
 
 # Build settings
