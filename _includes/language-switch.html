@@ -1,0 +1,16 @@
+<div class="language-switch">
+  {% assign current_path = page.url | remove_first: "/en/" | remove_first: "/es/" | remove_first: "/pt/" %}
+
+  {% if current_path == "" or current_path == "/" %}
+  {% assign current_path = "home" %}
+  {% endif %}
+  
+  <a class="lang-link {% if page.language == 'en' %}active{% endif %}" 
+     href="{{ '/en/' | append: current_path | relative_url }}">EN</a>
+     
+  <a class="lang-link {% if page.language == 'es' %}active{% endif %}" 
+     href="{{ '/es/' | append: current_path | relative_url }}">ES</a>
+     
+  <a class="lang-link {% if page.language == 'pt' %}active{% endif %}" 
+     href="{{ '/pt/' | append: current_path | relative_url }}">PT</a>
+</div>

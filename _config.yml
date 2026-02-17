@@ -1,0 +1,66 @@
+# Site settings
+
+title: 'Starter Site Template'
+title_en: 'Starter Site Template'
+title_pt: 'Modelo de Site Base'
+
+description: 'A neutral multilingual Jekyll template for GitHub Pages.'
+
+baseurl: ''
+absolute_url: 'https://example.com/'
+url: 'https://example.com'
+
+email: hello@example.com
+twitter_username: ''
+github_username: ''
+
+default_language: 'en'
+fallback_page: 'home'
+
+# Build settings
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+markdown: kramdown
+page_excerpts: true
+excerpt_separator: <!--more-->
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+    - slash-div
+
+# Pages settings
+include: ['_pages']
+collections:
+  pages:
+    output: true
+    permalink: /:path
+
+# Post defaults by language
+defaults:
+-
+  scope:
+    path: '_posts/en'
+    type: 'posts'
+  values:
+    permalink: 'en/:title'
+    language: en
+-
+  scope:
+    path: '_posts/es'
+    type: 'posts'
+  values:
+    permalink: 'es/:title'
+    language: es
+-
+  scope:
+    path: '_posts/pt'
+    type: 'posts'
+  values:
+    permalink: 'pt/:title'
+    language: pt
