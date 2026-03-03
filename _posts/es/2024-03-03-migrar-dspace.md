@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quiero actualizar o migrar una instalación"
+title: "Migrando a DSpace 8/9"
 date: 2024-03-02 00:00:00 +0200
 description: "Actualización y migración de instalaciones DSpace"
 language: es
@@ -12,162 +12,200 @@ permalink: /es/migrar/
 excerpt_separator: <!--more-->
 ---
 
-<p class="lead-highlight">Esta sección está orientada a instituciones que necesitan migrar entre versiones de DSpace o actualizar una instalación existente.</p>
-
-Guías paso a paso para migrar entre versiones, con checklists previas, FAQ de errores comunes y mejores prácticas regionales.
+<p class="lead-highlight">Guías técnicas y experiencias para pasar de DSpace 5/6 a 8/9.</p>
 
 <!--more-->
 
 <div class="note-container">
   <div class="note-header">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="10"></circle>
-      <line x1="12" y1="8" x2="12" y2="12"></line>
-      <line x1="12" y1="16" x2="12.01" y2="16"></line>
-    </svg>
     <h4>Navegación</h4>
   </div>
   <div class="note-content">
     <ul>
-      <li><a href="#documentacion">Documentación</a></li>
-      <li><a href="#faq">Preguntas Frecuentes</a></li>
-      <li><a href="#evaluacion">Autoevaluación</a></li>
-      <li><a href="#soporte">Derivación a Soporte</a></li>
+      <li><a href="#documentacion">Documentación de migración</a></li>
+      <li><a href="#etapas">Etapas del proceso</a></li>
+      <li><a href="#problemas">Problemas frecuentes</a></li>
+      <li><a href="#soporte">Derivación a soporte</a></li>
     </ul>
   </div>
 </div>
 
 ---
 
-<h2 class="custom-heading" id="documentacion">Documentación</h2>
+<h2 class="custom-heading" id="documentacion">Documentación de migración</h2>
 
-<h3 class="custom-heading-secondary">Checklist Previa a la Migración</h3>
+<p>
+Antes de iniciar cualquier procedimiento técnico, revisa la documentación oficial y las guías específicas de migración.
+</p>
 
-<div class="architecture-details">
-  <div class="detail-box">
-    <h4>1. Backup Completo</h4>
-    <p>Respalda base de datos PostgreSQL, directorio assetstore, configuraciones locales y personalizaciones de código.</p>
-  </div>
+<ul>
+  <li><strong>Guía oficial de migración DSpace 5/6 → 8/9</strong></li>
+  <li><strong>Scripts y herramientas recomendadas</strong></li>
+  <li><strong>Requisitos de infraestructura actualizados</strong></li>
+</ul>
 
-  <div class="detail-box">
-    <h4>2. Verificar Requisitos</h4>
-    <p>Confirma que el servidor cumple los requisitos de la nueva versión: Java, Node.js, PostgreSQL, Solr.</p>
-  </div>
+<p>
+Se recomienda no comenzar la instalación sin haber revisado previamente estas guías.
+</p>
 
-  <div class="detail-box">
-    <h4>3. Revisar Notas de Versión</h4>
-    <p>Lee las release notes oficiales para identificar cambios importantes, deprecaciones y nuevas funcionalidades.</p>
-  </div>
+---
 
-  <div class="detail-box">
-    <h4>4. Planificar Downtime</h4>
-    <p>Estima el tiempo de inactividad necesario y comunica a los usuarios con anticipación.</p>
-  </div>
-</div>
+<h2 class="custom-heading" id="etapas">Etapas del proceso de migración</h2>
 
-<h3 class="custom-heading-secondary">Proceso de Migración</h3>
+<p>
+Identifica en qué etapa te encuentras para acceder a recursos específicos.
+</p>
 
 <div class="workflow-container">
+
   <div class="workflow-step">
     <div class="step-content">
-      <h4>Migración de Base de Datos</h4>
-      <p>Ejecuta los scripts de migración de esquema incluidos en la nueva versión. Verifica que no haya errores en los logs.</p>
+      <h4>1. Planificación</h4>
+      <p>Evaluación de infraestructura, análisis de personalizaciones existentes y definición de estrategia de migración.</p>
     </div>
   </div>
 
   <div class="workflow-step">
     <div class="step-content">
-      <h4>Actualización Backend</h4>
-      <p>Compila el nuevo backend con Maven, actualiza configuraciones en <code>local.cfg</code> y <code>dspace.cfg</code>.</p>
+      <h4>2. Instalación del Backend</h4>
+      <p>Configuración de entorno, despliegue de API REST, conexión a base de datos y Solr.</p>
     </div>
   </div>
 
   <div class="workflow-step">
     <div class="step-content">
-      <h4>Actualización Frontend</h4>
-      <p>Instala dependencias con npm, ajusta configuraciones en <code>environment.*.ts</code> y compila para producción.</p>
+      <h4>3. Instalación del Frontend</h4>
+      <p>Despliegue Angular, configuración de entorno y conexión con backend.</p>
     </div>
   </div>
 
   <div class="workflow-step">
     <div class="step-content">
-      <h4>Reindexación Solr</h4>
-      <p>Ejecuta <code>dspace index-discovery -b</code> para reindexar todo el contenido con el nuevo esquema de Solr.</p>
+      <h4>4. Migración de datos</h4>
+      <p>Conversión y validación de base de datos, indexación y pruebas funcionales.</p>
     </div>
   </div>
 
   <div class="workflow-step">
     <div class="step-content">
-      <h4>Validación Final</h4>
-      <p>Verifica funcionalidades críticas: búsqueda, navegación, depósito de ítems, OAI-PMH, autenticación.</p>
+      <h4>5. Personalizaciones</h4>
+      <p>Adaptación de temas, configuraciones avanzadas y ajustes específicos de la institución.</p>
     </div>
   </div>
+
 </div>
 
 ---
 
-<h2 class="custom-heading" id="faq">Preguntas Frecuentes</h2>
+<h2 class="custom-heading" id="problemas">Clasificación del problema</h2>
+
+<p>
+Antes de crear un ticket, identifica el tipo de dificultad que estás experimentando:
+</p>
 
 <div class="service-components">
+
   <div class="service-item">
-    <h4>Errores frecuentes en migraciones</h4>
-    <p><strong>Error de esquema de BD:</strong> Verifica que ejecutaste todos los scripts de migración en orden.<br>
-    <strong>Permisos de archivos:</strong> Asegúrate de que el usuario de DSpace tiene permisos sobre assetstore.</p>
+    <h4>No comprendo el proceso</h4>
+    <p>Revisa nuevamente la guía oficial y el curso estructurado antes de escalar el caso.</p>
   </div>
 
   <div class="service-item">
-    <h4>Problemas con Angular</h4>
-    <p>Si el frontend no arranca, verifica versiones de Node.js y npm. Limpia caché con <code>npm cache clean --force</code> y reinstala dependencias.</p>
+    <h4>Estoy viendo un mensaje de error</h4>
+    <p>Consulta la sección de problemas comunes y verifica los logs del backend y frontend.</p>
   </div>
 
   <div class="service-item">
-    <h4>Problemas con Solr</h4>
-    <p>Si la búsqueda no funciona tras migrar, verifica que Solr esté usando el esquema correcto y reindexar completamente.</p>
+    <h4>Tengo un bloqueo técnico que impide avanzar</h4>
+    <p>Si ya revisaste documentación y errores similares, puedes solicitar soporte especializado.</p>
   </div>
 
-  <div class="service-item">
-    <h4>Personalizaciones rotas</h4>
-    <p>Las personalizaciones de código pueden romperse entre versiones. Revisa cambios en la API y adapta tu código personalizado.</p>
-  </div>
 </div>
 
 ---
 
-<h2 class="custom-heading" id="evaluacion">Autoevaluación</h2>
+<h2 class="custom-heading" id="soporte">Derivación a soporte</h2>
 
-<p>Antes de solicitar soporte, evalúa tu situación:</p>
+<p>
+Si necesitas crear un ticket, prepara previamente la siguiente información:
+</p>
 
-<div class="workflow-container">
-  <div class="workflow-step">
-    <div class="step-content">
-      <h4>Tengo un error puntual</h4>
-      <p>Si encontraste un error específico durante la migración y necesitas ayuda para diagnosticarlo.</p>
-    </div>
+<ul>
+  <li>Versión origen (5.x o 6.x)</li>
+  <li>Versión destino (8.x o 9.x)</li>
+  <li>Etapa del proceso en la que te encuentras</li>
+  <li>Descripción clara del problema</li>
+  <li>Logs relevantes (backend y/o frontend)</li>
+</ul>
+
+<!--div class="ticket-builder">
+
+  <h3>Clasifica tu caso antes de crear el ticket</h3>
+
+  <div style="margin-bottom:15px;">
+    <label for="etapa"><strong>Etapa de la migración:</strong></label><br>
+    <select id="etapa" class="form-control">
+      <option value="Planificación">Planificación</option>
+      <option value="Instalación backend">Instalación backend</option>
+      <option value="Instalación frontend">Instalación frontend</option>
+      <option value="Migración de datos">Migración de datos</option>
+      <option value="Personalizaciones">Personalizaciones</option>
+    </select>
   </div>
 
-  <div class="workflow-step">
-    <div class="step-content">
-      <h4>La migración falló</h4>
-      <p>Si la migración no se completó exitosamente y necesitas asistencia para recuperar el servicio.</p>
-    </div>
+  <div style="margin-bottom:20px;">
+    <label for="naturaleza"><strong>Naturaleza del problema:</strong></label><br>
+    <select id="naturaleza" class="form-control">
+      <option value="Error técnico">Error técnico</option>
+      <option value="Duda sobre el proceso">Duda sobre el proceso</option>
+    </select>
   </div>
 
-  <div class="workflow-step">
-    <div class="step-content">
-      <h4>Necesito acompañamiento completo</h4>
-      <p>Si prefieres que el equipo de soporte te acompañe durante todo el proceso de migración.</p>
-    </div>
-  </div>
+  <button class="cta-button" onclick="crearTicketMigracion()">
+    Crear Ticket en GitHub
+  </button>
+
 </div>
+
+<script>
+function crearTicketMigracion() {
+
+  const etapa = document.getElementById("etapa").value;
+  const naturaleza = document.getElementById("naturaleza").value;
+
+  const titulo = `[Migración][${etapa}][${naturaleza}] `;
+  
+  const cuerpo =
+`## Información inicial
+
+**Etapa:** ${etapa}
+**Naturaleza:** ${naturaleza}
 
 ---
 
-<h2 class="custom-heading" id="soporte">Derivación a Soporte</h2>
+Describe aquí el problema con el mayor detalle posible.
 
-<p>Si después de revisar la documentación y FAQ necesitas asistencia con tu migración, puedes crear un ticket de tipo <strong>"Migración"</strong>.</p>
+Incluye:
+- Comandos ejecutados
+- Mensajes de error
+- Fragmentos relevantes de logs
+`;
+
+  const url = "https://github.com/TU-USUARIO/TU-REPO/issues/new"
+    + "?template=migracion.yml"
+    + "&title=" + encodeURIComponent(titulo)
+    + "&body=" + encodeURIComponent(cuerpo);
+
+  window.location.href = url;
+}
+</script-->
 
 <div class="support-cta">
-  <h3>¿Necesitas ayuda con tu migración?</h3>
-  <p>Nuestro equipo puede asistirte con diagnóstico de errores, planificación de migración y acompañamiento técnico durante el proceso.</p>
-  <a href="{{ site.baseurl }}/es/ticket" class="cta-button">Crear Ticket de Migración</a>
+  <h3>Crear Ticket de Migración</h3>
+  <p>
+  Utiliza esta opción únicamente si ya revisaste la documentación y no encontraste solución.
+  </p>
+  <a href="{{ site.baseurl }}/es/ticket?tipo=migracion" class="cta-button">
+    Crear Ticket
+  </a>
 </div>
