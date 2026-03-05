@@ -50,6 +50,17 @@
               </a>
             </li>
           {% endfor %}
+          <li>
+            <a href="https://dspace.lareferencia.info/" class="footer-link" target="_blank" rel="noopener noreferrer">
+              {% if page.language == "es" %}
+                Proyecto LA Referencia - Lyrasis
+              {% elsif page.language == "pt" %}
+                Projeto LA Referencia - Lyrasis
+              {% else %}
+                LA Referencia - Lyrasis Project
+              {% endif %}
+            </a>
+          </li>
         </ul>
       </div>
       
