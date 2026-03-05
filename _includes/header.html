@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="wrapper">
     <a class="site-title nav-item"
-      href="{% if page.language == 'es' %}{{ '/es/home' | relative_url }}{% elsif page.language == 'pt' %}{{ '/pt/home' | relative_url }}{% else %}{{ '/en/home' | relative_url }}{% endif %}">
+      href="{% if page.language == 'pt' %}{{ '/pt/home' | relative_url }}{% else %}{{ '/es/home' | relative_url }}{% endif %}">
       <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="LA Referencia - Lyrasis"
         style="height: 60px; width: auto; max-width: 600px;">
     </a>
