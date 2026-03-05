@@ -3,6 +3,14 @@ layout: default
 ---
 
 <article id="post" class="post-page">
+  {% if page.language == "pt" %}
+    {% assign home_path = "/pt/home" %}
+    {% assign home_label = "Voltar ao início" %}
+  {% else %}
+    {% assign home_path = "/es/home" %}
+    {% assign home_label = "Volver al inicio" %}
+  {% endif %}
+
   <header class="post-hero">
     <p class="post-hero-chip">
       {% if page.language == "es" %}
@@ -22,4 +30,8 @@ layout: default
   <div class="post-body">
     {{ content }}
   </div>
+
+  <p class="post-back-home" style="text-align: right; margin-top: 2rem;">
+    <a href="{{ home_path | relative_url }}">{{ home_label }} &rarr;</a>
+  </p>
 </article>
