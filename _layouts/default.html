@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.language }}">
+<html lang="{{ page.language | default: 'es' }}">
 
   {%- assign snippets = site.data.snippets %}
 
@@ -25,4 +25,3 @@
   </body>
 
 </html>
-
