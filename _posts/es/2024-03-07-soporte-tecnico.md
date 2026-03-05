@@ -102,7 +102,8 @@ Si ya realizaste el diagnóstico básico y el problema persiste, puedes escalar 
   <p>
   El ticket será clasificado según componente y severidad para priorización técnica.
   </p>
-  <a href="{{ site.baseurl }}/es/ticket?tipo=incidente" class="cta-button">
-    Crear Ticket
-  </a>
+  <a href="https://github.com/memoemg/soporte-dspace-latam/issues/new?template=bug.yml" 
+class="cta-button" target="_blank">
+Reportar Incidente
+</a>
 </div>

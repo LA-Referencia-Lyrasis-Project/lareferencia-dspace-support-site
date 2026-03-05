@@ -205,7 +205,8 @@ Incluye:
   <p>
   Utiliza esta opción únicamente si ya revisaste la documentación y no encontraste solución.
   </p>
-  <a href="{{ site.baseurl }}/es/ticket?tipo=migracion" class="cta-button">
-    Crear Ticket
-  </a>
+  <a href="https://github.com/memoemg/soporte-dspace-latam/issues/new?template=migracion.yml" 
+class="cta-button" target="_blank">
+Crear Ticket de Migración
+</a>
 </div>

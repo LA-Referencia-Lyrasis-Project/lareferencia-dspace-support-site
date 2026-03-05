@@ -81,10 +81,10 @@ Este espacio está orientado a facilitar la comprensión autónoma mediante recu
 Si después de revisar la documentación, el curso y los materiales comunitarios necesitas orientación específica para tu institución, puedes solicitar acompañamiento técnico.
 </p>
 
-<div class="support-cta">
+<!--div class="support-cta">
   <h3>Solicitar orientación</h3>
   <p>
   Utiliza esta opción únicamente si tu consulta no está cubierta en los recursos disponibles.
   </p>
   <a href="{{ site.baseurl }}/es/ticket" class="cta-button">Crear Ticket de Orientación</a>
-</div>
+</div-->

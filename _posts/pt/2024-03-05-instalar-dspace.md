@@ -152,7 +152,8 @@ Se você precisa criar um ticket, prepare previamente as seguintes informações
   <p>
   Use esta opção somente se você já revisou a documentação oficial e não encontrou solução.
   </p>
-  <a href="{{ site.baseurl }}/pt/ticket?tipo=instalacion" class="cta-button">
-    Criar Ticket
-  </a>
+  <a href="https://github.com/memoemg/soporte-dspace-latam/issues/new?template=instalacion.yml" 
+class="cta-button" target="_blank">
+Criar Ticket de Instalação
+</a>
 </div>
