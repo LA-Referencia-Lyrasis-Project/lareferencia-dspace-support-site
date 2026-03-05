@@ -100,24 +100,27 @@ Identifica en qué etapa te encuentras para acceder a recursos específicos.
 <h2 class="custom-heading" id="problemas">Clasificación del problema</h2>
 
 <p>
-Antes de crear un ticket, identifica el tipo de dificultad que estás experimentando:
+Antes de crear un ticket, identifica la situación que estás experimentando durante la migración:
 </p>
 
 <div class="service-components">
 
   <div class="service-item">
-    <h4>No comprendo el proceso</h4>
-    <p>Revisa nuevamente la guía oficial y el curso estructurado antes de escalar el caso.</p>
+    <h4>Tengo una duda sobre el proceso</h4>
+    <p>No estás seguro de cómo ejecutar un paso de la migración o interpretar la documentación.</p>
+    <p><strong>Tipo de ticket:</strong> Consulta técnica.</p>
   </div>
 
   <div class="service-item">
     <h4>Estoy viendo un mensaje de error</h4>
-    <p>Consulta la sección de problemas comunes y verifica los logs del backend y frontend.</p>
+    <p>Durante la migración aparece un error en consola, logs o scripts.</p>
+    <p>Revisa primero la documentación y los logs del sistema.</p>
   </div>
 
   <div class="service-item">
-    <h4>Tengo un bloqueo técnico que impide avanzar</h4>
-    <p>Si ya revisaste documentación y errores similares, puedes solicitar soporte especializado.</p>
+    <h4>La migración se encuentra bloqueada</h4>
+    <p>El proceso no puede continuar después de seguir la documentación y revisar errores conocidos.</p>
+    <p><strong>Tipo de ticket:</strong> Incidente técnico.</p>
   </div>
 
 </div>

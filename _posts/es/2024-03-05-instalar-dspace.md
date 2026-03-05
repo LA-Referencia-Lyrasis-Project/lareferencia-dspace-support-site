@@ -109,24 +109,33 @@ Identifica en qué fase te encuentras para acceder a recursos específicos.
 <h2 class="custom-heading" id="problemas">Clasificación del problema</h2>
 
 <p>
-Si encuentras una dificultad durante la instalación, identifica el tipo de situación:
+Si encuentras una dificultad durante la instalación de DSpace, identifica primero la situación:
 </p>
 
 <div class="service-components">
 
   <div class="service-item">
-    <h4>No comprendo el procedimiento</h4>
-    <p>Revisa la guía oficial y el curso estructurado antes de escalar el caso.</p>
+    <h4>No estoy seguro de cómo ejecutar un paso</h4>
+    <p>
+    Revisa nuevamente la guía oficial de instalación y el curso estructurado antes de abrir un ticket.
+    Muchos problemas de instalación se resuelven revisando los pasos completos del procedimiento.
+    </p>
   </div>
 
   <div class="service-item">
     <h4>Estoy viendo un mensaje de error</h4>
-    <p>Verifica versiones instaladas, variables de entorno y revisa logs del backend o frontend.</p>
+    <p>
+    Verifica las versiones instaladas (Java, Maven, Node, PostgreSQL, Solr) y revisa los logs del backend o frontend.
+    Muchos errores de instalación están relacionados con dependencias o variables de entorno.
+    </p>
   </div>
 
   <div class="service-item">
-    <h4>La instalación no avanza</h4>
-    <p>Si ya validaste requisitos y documentación, puede tratarse de un bloqueo técnico específico.</p>
+    <h4>La instalación se encuentra bloqueada</h4>
+    <p>
+    Si ya verificaste los requisitos del entorno y revisaste la documentación oficial, puede tratarse de un problema técnico específico de configuración o despliegue.
+    En ese caso puedes crear un ticket de soporte.
+    </p>
   </div>
 
 </div>
