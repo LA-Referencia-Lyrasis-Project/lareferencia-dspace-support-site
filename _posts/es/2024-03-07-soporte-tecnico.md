@@ -85,8 +85,9 @@ Antes de crear el ticket, prepara la siguiente información:
   <li>Logs relevantes</li>
 </ul>
 
-<p>
-Un ticket sin logs o sin descripción reproducible retrasa el diagnóstico.
+<p style="margin-top:15px; font-size:0.95em; color:#555;">
+⚠️ Para crear un ticket necesitas una cuenta en GitHub. 
+<a href="https://github.com/signup" target="_blank">Crear cuenta</a>
 </p>
 
 ---
@@ -98,12 +99,13 @@ Si ya realizaste el diagnóstico básico y el problema persiste, puedes escalar 
 </p>
 
 <div class="support-cta">
-  <h3>Crear Ticket de Incidente</h3>
+  <h3>Solicitar soporte técnico</h3>
   <p>
   El ticket será clasificado según componente y severidad para priorización técnica.
   </p>
-  <a href="https://github.com/memoemg/soporte-dspace-latam/issues/new?template=bug.yml" 
+  <a href="https://github.com/LA-Referencia-Lyrasis-Project/tech-support/issues/new?template=soporte.yml" 
 class="cta-button" target="_blank">
 Reportar Incidente
 </a>
 </div>
+

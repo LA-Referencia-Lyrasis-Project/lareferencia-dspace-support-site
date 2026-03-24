@@ -156,12 +156,17 @@ Si necesitas crear un ticket, prepara previamente la siguiente información:
   <li>Logs relevantes (backend, frontend o Solr)</li>
 </ul>
 
+<p style="margin-top:15px; font-size:0.95em; color:#555;">
+⚠️ Para crear un ticket necesitas una cuenta en GitHub. 
+<a href="https://github.com/signup" target="_blank">Crear cuenta</a>
+</p>
+
 <div class="support-cta">
-  <h3>Crear Ticket de Instalación</h3>
+  <h3>Solicitar soporte de instalación</h3>
   <p>
   Utiliza esta opción únicamente si ya revisaste la documentación oficial y no encontraste solución.
   </p>
-  <a href="https://github.com/memoemg/soporte-dspace-latam/issues/new?template=instalacion.yml" 
+  <a href="https://github.com/LA-Referencia-Lyrasis-Project/tech-support/issues/new?template=instalacion.yml" 
 class="cta-button" target="_blank">
 Crear Ticket de Instalación
 </a>

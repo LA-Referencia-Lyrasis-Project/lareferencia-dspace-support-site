@@ -141,74 +141,17 @@ Si necesitas crear un ticket, prepara previamente la siguiente información:
   <li>Logs relevantes (backend y/o frontend)</li>
 </ul>
 
-<!--div class="ticket-builder">
-
-  <h3>Clasifica tu caso antes de crear el ticket</h3>
-
-  <div style="margin-bottom:15px;">
-    <label for="etapa"><strong>Etapa de la migración:</strong></label><br>
-    <select id="etapa" class="form-control">
-      <option value="Planificación">Planificación</option>
-      <option value="Instalación backend">Instalación backend</option>
-      <option value="Instalación frontend">Instalación frontend</option>
-      <option value="Migración de datos">Migración de datos</option>
-      <option value="Personalizaciones">Personalizaciones</option>
-    </select>
-  </div>
-
-  <div style="margin-bottom:20px;">
-    <label for="naturaleza"><strong>Naturaleza del problema:</strong></label><br>
-    <select id="naturaleza" class="form-control">
-      <option value="Error técnico">Error técnico</option>
-      <option value="Duda sobre el proceso">Duda sobre el proceso</option>
-    </select>
-  </div>
-
-  <button class="cta-button" onclick="crearTicketMigracion()">
-    Crear Ticket en GitHub
-  </button>
-
-</div>
-
-<script>
-function crearTicketMigracion() {
-
-  const etapa = document.getElementById("etapa").value;
-  const naturaleza = document.getElementById("naturaleza").value;
-
-  const titulo = `[Migración][${etapa}][${naturaleza}] `;
-  
-  const cuerpo =
-`## Información inicial
-
-**Etapa:** ${etapa}
-**Naturaleza:** ${naturaleza}
-
----
-
-Describe aquí el problema con el mayor detalle posible.
-
-Incluye:
-- Comandos ejecutados
-- Mensajes de error
-- Fragmentos relevantes de logs
-`;
-
-  const url = "https://github.com/TU-USUARIO/TU-REPO/issues/new"
-    + "?template=migracion.yml"
-    + "&title=" + encodeURIComponent(titulo)
-    + "&body=" + encodeURIComponent(cuerpo);
-
-  window.location.href = url;
-}
-</script-->
+<p style="margin-top:15px; font-size:0.95em; color:#555;">
+⚠️ Para crear un ticket necesitas una cuenta en GitHub. 
+<a href="https://github.com/signup" target="_blank">Crear cuenta</a>
+</p>
 
 <div class="support-cta">
-  <h3>Crear Ticket de Migración</h3>
+  <h3>Solicitar soporte de migración</h3>
   <p>
   Utiliza esta opción únicamente si ya revisaste la documentación y no encontraste solución.
   </p>
-  <a href="https://github.com/memoemg/soporte-dspace-latam/issues/new?template=migracion.yml" 
+  <a href="https://github.com/LA-Referencia-Lyrasis-Project/tech-support/issues/new?template=migracion.yml" 
 class="cta-button" target="_blank">
 Crear Ticket de Migración
 </a>
