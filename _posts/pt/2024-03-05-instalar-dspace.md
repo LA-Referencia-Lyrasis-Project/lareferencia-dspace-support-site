@@ -39,7 +39,8 @@ Antes de iniciar a instalação, revise a documentação técnica atualizada par
 </p>
 
 <ul>
-  <li><strong>Guia oficial de instalação</strong></li>
+  <li><strong><a href="https://wiki.lyrasis.org/display/DSDOC8xpt/Instalando+o+DSpace">Guia oficial de instalação DSpace 8</strong></li>
+  <li><strong><a href="https://wiki.lyrasis.org/display/DSDOC9xpt/Instalando+o+DSpace">Guia oficial de instalação DSpace 9</strong></li>
   <li><strong>Instalação com Docker (alternativa)</strong></li>
 </ul>
 
