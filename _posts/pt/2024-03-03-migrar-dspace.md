@@ -138,6 +138,11 @@ Se você precisa criar um ticket, prepare previamente as seguintes informações
   <li>Logs relevantes (backend e/ou frontend)</li>
 </ul>
 
+<p style="margin-top:15px; font-size:0.95em; color:#555;">
+⚠️ Para criar um ticket, você precisa de uma conta no GitHub.
+<a href="https://github.com/signup" target="_blank">Criar conta</a>
+</p>
+
 <div class="support-cta">
   <h3>Criar Ticket de Migração</h3>
   <p>
