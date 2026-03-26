@@ -39,8 +39,8 @@ Antes de iniciar qualquer procedimento técnico, revise a documentação oficial
 </p>
 
 <ul>
-  <li><strong>Guia oficial de migração DSpace 5/6 → 8/9</strong></li>
-  <li><strong>Scripts e ferramentas recomendadas</strong></li>
+  <li><strong><a href="https://wiki.lyrasis.org/pages/viewpage.action?pageId=397869334#">Guia oficial de migração DSpace 5/6 → 8/9</a></strong></li>
+  <li><strong><a href="https://share.note.sx/ys4agtk9#cGkkfLPnLtKnZg6XGeGW+pIo3FdcVCe4MLro2F9Ajvc">Scripts e ferramentas recomendadas</a></strong></li>
   <li><strong>Requisitos de infraestrutura atualizados</strong></li>
 </ul>
 
@@ -144,11 +144,11 @@ Se você precisa criar um ticket, prepare previamente as seguintes informações
 </p>
 
 <div class="support-cta">
-  <h3>Criar Ticket de Migração</h3>
+  <h3>Solicitar suporte de migração</h3>
   <p>
   Use esta opção somente se você já revisou a documentação e não encontrou solução.
   </p>
-  <a href="https://github.com/memoemg/soporte-dspace-latam/issues/new?template=migracion.yml" 
+  <a href="https://github.com/LA-Referencia-Lyrasis-Project/tech-support/issues/new?template=migracion.yml" 
 class="cta-button" target="_blank">
 Criar Ticket de Migração
 </a>

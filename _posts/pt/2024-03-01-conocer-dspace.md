@@ -39,7 +39,8 @@ A equipe da LA Referencia - Lyrasis elaborou e traduziu recursos-chave para comp
 </p>
 
 <ul>
-  <li><strong>Documentação oficial do DSpace 8.x</strong> - Guias técnicos completos de instalação, configuração e administração.</li>
+  <li><strong><a href="https://wiki.lyrasis.org/pages/viewpage.action?pageId=394527172">Documentação oficial do DSpace 8.x</a></strong> - Guias técnicos completos de instalação, configuração e administração.</li>
+  <li><strong><a href="https://wiki.lyrasis.org/pages/viewpage.action?pageId=416055412">Documentação oficial do DSpace 9.x</a></strong> - Guias técnicos completos de instalação, configuração e administração.</li>
 </ul>
 
 ---
@@ -63,10 +64,9 @@ Material complementar para facilitar a compreensão técnica e organizacional do
 </p>
 
 <ul>
-  <li><strong>Infográficos técnicos</strong> - Componentes, requisitos e arquitetura visual.</li>
-  <li><strong>Blog técnico</strong> - Artigos e experiências de implementação.</li>
-  <li><strong>Canal no YouTube</strong> - Webinars, apresentações e demonstrações.</li>
-  <li><strong>DSpace Demo do projeto</strong> - Ambiente público para exploração funcional.</li>
+  <li><strong><a href="https://lu270575.github.io/dspace-infografico/index.html">Infográficos técnicos</a></strong> - Componentes, requisitos e arquitetura visual.</li>
+  <li><strong><a href="https://www.youtube.com/watch?v=K_WEerpinyo&list=PL2j1F3_xIyw6NB1WhjbmnW9VOCBDjZ8nV">Canal no YouTube</a></strong> - Webinars, apresentações e demonstrações.</li>
+  <li><strong><a href="https://dspace-prd.lareferencia.info/">DSpace Demo do projeto</a></strong> - Ambiente público para exploração funcional.</li>
 </ul>
 
 ---

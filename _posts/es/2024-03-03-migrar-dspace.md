@@ -39,9 +39,8 @@ Antes de iniciar cualquier procedimiento técnico, revisa la documentación ofic
 </p>
 
 <ul>
-  <li><strong>Guía oficial de migración DSpace 5/6 → 8/9</strong></li>
-  <li><strong>Scripts y herramientas recomendadas</strong></li>
-  <li><strong>Requisitos de infraestructura actualizados</strong></li>
+  <li><strong><a href="https://wiki.lyrasis.org/pages/viewpage.action?pageId=397869334#">Guía oficial de migración DSpace 5/6 → 8/9</a></strong></li>
+  <li><strong><a href="https://share.note.sx/ys4agtk9#cGkkfLPnLtKnZg6XGeGW+pIo3FdcVCe4MLro2F9Ajvc">Scripts y herramientas recomendadas</a></strong></li>
 </ul>
 
 <p>
