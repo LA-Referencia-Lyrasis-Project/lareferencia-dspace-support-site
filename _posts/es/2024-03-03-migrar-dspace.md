@@ -40,7 +40,7 @@ Antes de iniciar cualquier procedimiento técnico, revisa la documentación ofic
 
 <ul>
   <li><strong><a href="https://wiki.lyrasis.org/pages/viewpage.action?pageId=397869334#">Guía oficial de migración DSpace 5/6 → 8/9</a></strong></li>
-  <li><strong><a href="https://share.note.sx/ys4agtk9#cGkkfLPnLtKnZg6XGeGW+pIo3FdcVCe4MLro2F9Ajvc">Scripts y herramientas recomendadas</a></strong></li>
+  <li><strong><a href="https://github.com/LA-Referencia-Lyrasis-Project/tutoriais-dspace/blob/main/migracion-dspace-es.md">Scripts y herramientas recomendadas</a></strong></li>
 </ul>
 
 <p>
