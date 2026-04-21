@@ -103,7 +103,7 @@ Se você já realizou o diagnóstico básico e o problema persiste, pode escalar
   <p>
   O ticket será classificado por componente e severidade para priorização técnica.
   </p>
-  <a href="https://github.com/LA-Referencia-Lyrasis-Project/tech-support/issues/new?template=soporte.yml" 
+  <a href="https://github.com/LA-Referencia-Lyrasis-Project/tech-support/issues/new?template=incidencia.yml" 
 class="cta-button" target="_blank">
 Reportar Incidente
 </a>

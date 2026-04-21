@@ -158,7 +158,7 @@ Se você precisa criar um ticket, prepare previamente as seguintes informações
   <p>
   Use esta opção somente se você já revisou a documentação oficial e não encontrou solução.
   </p>
-  <a href="https://github.com/LA-Referencia-Lyrasis-Project/tech-support/issues/new?template=instalacion.yml" 
+  <a href="https://github.com/LA-Referencia-Lyrasis-Project/tech-support/issues/new?template=instalacao.yml" 
 class="cta-button" target="_blank">
 Criar Ticket de Instalação
 </a>
