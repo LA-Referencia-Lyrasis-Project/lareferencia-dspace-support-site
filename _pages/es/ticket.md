@@ -110,7 +110,7 @@ order: 5
 <div class="support-cta">
   <h3>Contacto Temporal</h3>
   <p>Mientras implementamos el sistema de tickets, puedes enviarnos tu consulta por email incluyendo la información requerida arriba.</p>
-  <a href="mailto:soporte-dspace@lareferencia.info" class="cta-button">Enviar Email</a>
+  <a href="mailto:soporte@lareferencia.redclara.net" class="cta-button">Enviar Email</a>
 </div>
 
 ---

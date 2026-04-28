@@ -42,6 +42,7 @@ Antes de iniciar qualquer procedimento técnico, revise a documentação oficial
   <li><strong><a href="https://wiki.lyrasis.org/pages/viewpage.action?pageId=397869074">Guia oficial de migração DSpace 5/6 → 8</a></strong></li>
   <li><strong><a href="https://wiki.lyrasis.org/pages/viewpage.action?pageId=419889502">Guia oficial de migração DSpace 5/6 → 9</a></strong></li>
   <li><strong><a href="https://github.com/LA-Referencia-Lyrasis-Project/tutoriais-dspace/blob/main/migracao-dspace-pt.md">Scripts e ferramentas recomendadas</a></strong></li>
+  <li><strong><a href="https://notebooklm.google.com/notebook/87b5ea36-bdbc-4ba2-b156-d38d9c1a7cae/preview">Chat Consulta Instalação e Migração DSpace 8.x e 9.x</a></strong></li>
 </ul>
 
 <p>
